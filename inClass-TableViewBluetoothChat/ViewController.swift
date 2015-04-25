@@ -41,7 +41,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     //Button actions
     
-    @IBAction func scanButton(sender: NSButton) {
+    @IBAction func scanButton(sender: AnyObject) {
         myCentralManager.scanForPeripheralsWithServices(nil, options: nil )   // call to scan for services
         statusLabel.stringValue = "Scanning for Peripherals..."
         println("Scanning for Peripherals")
